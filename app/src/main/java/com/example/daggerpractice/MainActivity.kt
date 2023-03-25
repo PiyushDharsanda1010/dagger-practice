@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val component = DaggerUserComponent.builder().build()
         component.inject(this)
+
         userRep.userRegister("piyushd068@gmail.com","1232456")
     }
 }
